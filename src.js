@@ -76,7 +76,10 @@ function randomKindness(r) {
 
 $.fillStyle = "hsla(0,0%,0%,1)";
 $.font = "italic 12em sans-serif";
-var t = "K.Nguyên".split("").join(String.fromCharCode(0x2006));
+var index = Math.floor(Math.random() * 3);
+const arrName = ["K.Nguyen", "16GB", "K.N"];
+var textInput = arrName[index];
+var t = textInput.split("").join(String.fromCharCode(0x2006));
 $.fillText(t, (c.width - $.measureText(t).width) * 0.33, c.height * 0.33);
 
 world = [];
