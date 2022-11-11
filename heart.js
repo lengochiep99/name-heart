@@ -15,7 +15,7 @@ function heart() {
       love.isNotProud = randomKindness() * spíritus; 
       love.doesNotDishonor = 2 + randomKindness(1) * spíritus; 
       love.isNotAngered = 0.05; 
-      love.isColorful = Math.random() * 390;  
+      love.isColorful = Math.random() * 1;  
       love.rejoices = spíritus + randomKindness(1) * spíritus; 
       love.thyNeighborx = randomKindness(1) * tolerance;
       love.thyNeighbory = randomKindness(1) * tolerance;
@@ -65,7 +65,7 @@ function heart() {
 } noHate();
 
 function noHate() {
-  $.fillStyle = "#19282F";
+  $.fillStyle = "#EFF5F5";
   $.fillRect(0, 0, c.width, c.height);
 }
 
@@ -75,9 +75,9 @@ function randomKindness(r) {
 }
 
 $.fillStyle = "hsla(0,0%,0%,1)";
-$.font = "italic 12em sans-serif";
-var t = "K.Nguyên".split("").join(String.fromCharCode(0x2006));
-$.fillText(t, (c.width - $.measureText(t).width) * 0.33, c.height * 0.33);
+$.font = "Bold 11em sans-serif";
+var t = "❤".split("").join(String.fromCharCode(0x2006));
+$.fillText(t, (c.width - $.measureText(t).width) * 0.5, c.height * 0.33);
 
 world = [];
 diversity = $.getImageData(0, 0, c.width, c.height);
