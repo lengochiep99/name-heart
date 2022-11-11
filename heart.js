@@ -75,7 +75,7 @@ function randomKindness(r) {
 }
 
 $.fillStyle = "hsla(0,0%,0%,1)";
-$.font = "Bold 11em sans-serif";
+$.font = "Bold 15em sans-serif";
 var t = "❤".split("").join(String.fromCharCode(0x2006));
 $.fillText(t, (c.width - $.measureText(t).width) * 0.5, c.height * 0.33);
 
