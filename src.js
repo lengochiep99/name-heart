@@ -76,7 +76,7 @@ function randomKindness(r) {
 
 $.fillStyle = "hsla(0,0%,0%,1)";
 $.font = "italic 12em sans-serif";
-var index = Math.floor(Math.random() * 3);
+var index = Math.floor(Math.random() * 4);
 const arrName = ["K.Nguyen", "16GB", "Ỏ", "Ay da"];
 var textInput = arrName[index];
 var t = textInput.split("").join(String.fromCharCode(0x2006));
